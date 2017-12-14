@@ -1,0 +1,308 @@
+/*Global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 28px;
+    background: #f18d9e;
+    border: 0;
+    padding-left: 20px;
+    padding-right:20px;
+    color: #ffffff;
+    font: 16px/1.5 Bodoni MT;
+}
+
+.dark{
+    padding: 15px;
+    background: #5d535e;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.white{
+    padding: 15px;
+    background: #ffffff;
+    color: #5d535e;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@font-face{
+    font-family: Bodoni MT;
+    src: url(../font/Bodoni_MT);
+}   
+    
+/*Header*/
+header{
+    background: #f18d9e;
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 25px;
+    padding-bottom: 8px;
+    min-height: 70px;
+    border-bottom: #dfe166 4px solid;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 15px 0 15px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+
+header .highlight, header .current a{
+    color: #5d535e;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #5d535e;
+    font-weight: bold;
+}
+
+
+/*Showcase*/
+#showcase{
+    min-height: 400px;
+    background-color: #e6e5e7;
+    background: url("../img/showcase.jpg") 0px -170px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 80px;
+    font-size:52px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 18px;
+}
+
+
+/*Newsletter*/
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background: #5d535e;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="search"]{
+    padding: 4px;
+    height: 28px;
+    width: 250px;
+}
+
+
+/*Body*/
+body{
+    font: 15px/1.5 Bodoni MT;
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/background.jpg");
+}
+
+body #boxes a{
+    color: #5d535e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+body #boxes a:hover{
+    color: #f18d9e;
+    font-weight: bold;
+}
+
+body #boxes p{
+    font-size: 16px;
+}
+
+
+/*Boxes*/
+#boxes{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#boxes .box{
+    float: left; 
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 200px;
+}
+
+#boxes p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#boxes .white{
+    float: left; 
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1px;
+    width: 30%;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0px 0px 2px #5d535e; 
+}
+
+#boxes .white #iframe{
+    margin-bottom: 2px;
+}
+
+#boxes .white h1{
+    font-variant: small-caps;
+    font-size: 28px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#boxes .white a{
+    color: #ffffff;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+#boxes .white a:hover{
+    color: #5d535e;
+    font-weight: normal;
+}
+
+/*Page Titles*/
+#pagetitle h1{
+    color: #5d535e;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 1px;
+}
+
+
+/*Sidebar*/
+#sidebar{
+    float: right;
+    width: 30%;
+    margin-top:10px;
+}
+
+#sidebar .quote input, #sidebar .quote textarea{
+    width: 93%;
+    padding: 5px;
+}
+
+
+/*Main-col*/
+#main-col{
+    float: left;
+    width: 65%;
+    color: #5d535e;
+}
+
+
+/*Services*/
+#services li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+
+/*Footer*/
+footer{
+    padding: 15px;
+    margin-top: 120px;
+    color: #ffffff;
+    background-color: #9bd8d2;
+    text-align: center;
+}
+
+
+/*Media Queries*/
+@media(max-width: 770px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    #boxes .white,
+    #main-col,
+    #sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    header{
+        padding-bottom: 15px;
+    }
+    
+    #showcase h1{
+        margin-top: 40px;
+    }
+    
+    #newsletter button, .quote button{
+        display: block;
+        width: 100%;
+    }
+    
+    #newsletter input[type="search"], .quote input, .quote textarea{
+        width:100%;
+        margin-bottom: 5px;
+    }
+    #boxes .white{
+        width: 90%;
+    }
+    
+}
