@@ -218,14 +218,6 @@ body #boxes p{
     font-weight: normal;
 }
 
-/*Page Titles*/
-#pagetitle h1{
-    color: #5d535e;
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 1px;
-}
-
 
 /*Sidebar*/
 #sidebar{
@@ -244,9 +236,13 @@ body #boxes p{
 #main-col{
     float: left;
     width: 65%;
-    color: #5d535e;
 }
 
+#main-col .page-title{
+    color: #5d535e;
+    font-size: 30px;
+    font-variant: small-caps;
+}
 
 /*Services*/
 #services li{
@@ -255,6 +251,7 @@ body #boxes p{
     border: #cccccc solid 1px;
     margin-bottom: 5px;
     background: #e6e6e6;
+    color: #5d535e;
 }
 
 
