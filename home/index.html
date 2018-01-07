@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="(description)">
+        <meta name="keywords" content="my website, trans website">
+        <meta name="author" content="Tran Nguyen">
+        <title>Origami World | Welcome!</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Origami</span> World</h1>
+                </div>
+                <div id="navbar">
+                    <nav>
+                        <ul>
+                            <li class="current"><a href="./index.html">Home</a></li>
+                            <li><a href="./origami.html">Origami</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                    <div class="dropdown">
+                        <li class="dropbtn">≡</li>
+                        <div class="dropdown-content">
+                            <a href="./index.html">Home</a>
+                            <a href="./origami.html">Origami</a>
+                            <a href="./portfolio.html">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    window.onscroll = function() {myFunction()};
+        
+                    var navbar = document.getElementById("navbar");
+                    var sticky = navbar.offsetTop;
+        
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                        } 
+                        else {
+                            navbar.classList.remove("sticky");
+                        }
+                    }
+                </script>
+            </div>
+        </header>
+        
+        <section id="showcase">
+            <div class="container">
+                <h1>What is Origami?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </section>
+        
+        <section id="newsletter">
+            <div class="container">
+                <h1>Submit Email for Updates</h1>
+                <form>
+                    <input type="search" placeholder="Enter your email...">
+                    <button type="submit" class="button_1">Submit</button>
+                </form>
+            </div>
+        </section>
+        
+        <section id="main-col">
+            <div class="container">
+                <h1 class="page-title"> &#9656;Home</h1>
+            </div>
+        </section>
+        
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                    <nav>
+                        <a href="./index.html"><img src="../img/red.png"></a>
+                        <h3><a href="./index.html">Home</a></h3>
+                    </nav>
+                </div>
+                <div class="box">
+                    <nav>
+                        <a href="./origami.html"><img src="../img/yellow.png"></a>
+                        <h3><a href="./origami.html"> All About Origami</a></h3>
+                    </nav>
+                </div>
+                <div class="box">
+                    <nav>
+                        <a href="./portfolio.html"><img src="../img/green.png"></a>
+                        <h3><a href="./portfolio.html">My Portfolio</a></h3>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>My website, Copyright  &copy; 2017</p>
+        </footer>
+        
+    </body>
+</html>

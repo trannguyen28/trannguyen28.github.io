@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="(description)">
+        <meta name="keywords" content="my website, trans website">
+        <meta name="author" content="Tran Nguyen">
+        <title>Origami World | Welcome!</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Origami</span> World</h1>
+                </div>
+                <div id="navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="../home/index.html">Home</a></li>
+                            <li><a href="../home/origami.html">Origami</a></li>
+                            <li><a href="../home/portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                    <div class="dropdown">
+                        <li class="dropbtn">≡</li>
+                        <div class="dropdown-content">
+                            <a href="../home/index.html">Home</a>
+                            <a href="../home/origami.html">Origami</a>
+                            <a href="../home/portfolio.html">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    window.onscroll = function() {myFunction()};
+        
+                    var navbar = document.getElementById("navbar");
+                    var sticky = navbar.offsetTop;
+        
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                        } 
+                        else {
+                            navbar.classList.remove("sticky");
+                        }
+                    }
+                </script>
+            </div>
+        </header>
+        
+        <section id="main">
+            <div class="container">
+                <article id="main-col">
+                    <h1 class="page-title">&#9656;Share Your Ideas</h1>
+                    <p>Ut vitae augue tellus. Quisque commodo magna vitae elementum vulputate. Vivamus vehicula sem magna, ac pharetra justo porta ut. Vestibulum commodo, ipsum sed tempor venenatis, elit turpis consectetur risus, nec posuere ante dui finibus dui. Aenean a lectus ante.</p>
+                    <form class="quote">
+                        <div>
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div>
+                            <label>Email</label><br>
+                            <input type="text" placeholder="Email Address">
+                        </div>
+                        <div>
+                            <label>Descriptions</label><br>
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="button_1">Send</button>
+                    </form>
+                </article>
+                
+                <aside id="sidebar">
+                    <div class="dark">
+                        <h3>What We Do</h3>
+                        <p>Cras accumsan dui a massa imperdiet, vehicula feugiat justo rutrum. Etiam rutrum suscipit orci, ut maximus sem vestibulum ut. Donec id sapien nec est faucibus facilisis. </p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        
+        <footer>
+            <p>My website, Copyright  &copy; 2017</p>
+        </footer>
+    </body>
+</html>

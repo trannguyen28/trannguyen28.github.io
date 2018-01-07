@@ -6,46 +6,54 @@
         <meta name="description" content="(description)">
         <meta name="keywords" content="my website, trans website">
         <meta name="author" content="Tran Nguyen">
-        <title>My Website | Anvanced Origami</title>
-        <link rel="stylesheet" href="./css/style.css">
+        <title>Origami World | Advanced Origami Tutorials</title>
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     
     <body>
         <header>
             <div class="container">
                 <div id="branding">
-                    <h1><span class="highlight">O</span>rigami</h1>
+                    <h1><span class="highlight">Origami</span> World</h1>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">Portfolio</a></li>
-                        <li><a href="services.html">Services</a></li>
-                    </ul>
-                </nav>
+                <div id="navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="../home/index.html">Home</a></li>
+                            <li><a href="../home/origami.html">Origami</a></li>
+                            <li><a href="../home/portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                    <div class="dropdown">
+                        <li class="dropbtn">≡</li>
+                        <div class="dropdown-content">
+                            <a href="../home/index.html">Home</a>
+                            <a href="../home/origami.html">Origami</a>
+                            <a href="../home/portfolio.html">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    window.onscroll = function() {myFunction()};
+        
+                    var navbar = document.getElementById("navbar");
+                    var sticky = navbar.offsetTop;
+        
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                        } 
+                        else {
+                            navbar.classList.remove("sticky");
+                        }
+                    }
+                </script>
             </div>
         </header>
         
-        <section id="showcase">
-            <div class="container">
-                <h1>Description</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-        </section>
-        
-        <section id="newsletter">
-            <div class="container">
-                <h1>Search</h1>
-                <form>
-                    <input type="search" placeholder="Enter what you need...">
-                    <button type="submit" class="button_1">Enter</button>
-                </form>
-            </div>
-        </section>
-        
         <section id="main-col">
             <div class="container">
-                <h1 class="page-title">ADVANCED ORIGAMI TUTORIALS</h1>
+                <h1 class="page-title"> &#9656;Advanced Origami Tutorials</h1>
             </div>
         </section>
         

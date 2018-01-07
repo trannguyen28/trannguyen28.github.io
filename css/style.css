@@ -20,12 +20,19 @@ ul{
     font: 16px/1.5 Bodoni MT;
 }
 
+.button_1:hover{
+    font: bold 16px/1.5 Bodoni MT;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
 .dark{
     padding: 15px;
     background: #5d535e;
     color: #ffffff;
     margin-top: 10px;
     margin-bottom: 10px;
+    float: none;
 }
 
 .white{
@@ -47,7 +54,7 @@ header{
     color: #ffffff;
     font-size: 18px;
     padding-top: 25px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     min-height: 70px;
     border-bottom: #dfe166 4px solid;
 }
@@ -61,22 +68,24 @@ header a{
 }
 
 header li{
-    float: left;
+    text-align: center;
     display: inline;
-    padding: 0 15px 0 15px;
+    padding: 0 30px 0 30px;
 }
 
 header #branding{
-    float: left;
+    float: none;
 }
 
 header #branding h1{
     margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-header nav{
-    float: right;
-    margin-top: 10px;
+header #navbar{
+    text-align: center;
+    background-color: #f18d9e;
 }
 
 
@@ -90,6 +99,88 @@ header a:hover{
     font-weight: bold;
 }
 
+/*Sticky nav bar*/
+.sticky {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  padding: 10px;
+}
+
+.sticky .dropdown{
+    margin-top: 4px;
+}
+
+.sticky + #showcase + #maincol{
+  margin-top: 50px;
+}
+
+
+/*Dropdown*/
+.dropbtn{
+    font: 35px Times New Roman;
+    font-weight: 900;
+    background-color: #f18d9e;
+    color: #ffffff;
+    padding: 0 15px 0 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: absolute; 
+    top: 0%;
+    left: 2%;
+    display: inline-block;
+    padding: 0px;
+    margin-top: 80.5px;
+    margin-bottom: 0px;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: #5d535e;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    left: 0px;
+}
+
+.dropdown-content a:hover{
+    background-color: #5d535e;
+    color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn:hover{
+    background-color: #f18d9e;
+    color: #5d535e;
+}
+
+
+/*Hide & show DIV element*/
+.myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
 
 /*Showcase*/
 #showcase{
@@ -101,7 +192,7 @@ header a:hover{
 }
 
 #showcase h1{
-    margin-top: 80px;
+    margin-top: 60px;
     font-size:52px;
     margin-bottom: 10px;
 }
@@ -131,6 +222,21 @@ header a:hover{
     padding: 4px;
     height: 28px;
     width: 250px;
+    font: normal 15px/1.5 Bodoni MT;
+    color: #5d535e;
+    width: 60%;
+}
+
+#newsletter ::placeholder{
+    font: 15px/1 Bodoni MT;
+    font-weight: 100;
+    color: #bbbbbb;
+}
+
+#newsletter :-ms-input-placeholder{
+    font: 15px/1 Bodoni MT;
+    font-weight: 100;
+    color: #bbbbbb;
 }
 
 
@@ -140,6 +246,10 @@ body{
     padding: 0;
     margin: 0;
     background-image: url("../img/background.jpg");
+}
+
+body #boxes h3{
+    margin-top: -5px;
 }
 
 body #boxes a{
@@ -161,7 +271,7 @@ body #boxes p{
 
 /*Boxes*/
 #boxes{
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -218,6 +328,11 @@ body #boxes p{
     font-weight: normal;
 }
 
+#boxes .box img:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
 
 /*Sidebar*/
 #sidebar{
@@ -236,13 +351,105 @@ body #boxes p{
 #main-col{
     float: left;
     width: 65%;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
 #main-col .page-title{
     color: #5d535e;
-    font-size: 30px;
+    font-size: 35px;
     font-variant: small-caps;
 }
+
+#main-col a{
+    color: #5d535e;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#main-col a:hover{
+    color: #f18d9e;
+    font-weight: bold;
+}
+
+#main-col li{
+    color: #5d535e;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: left;
+    padding: 0 20px 0 10px;
+ }
+ 
+#main-col nav{
+    float: left;
+    width: 100%;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+/*Share Ideas Form*/
+#main .quote{
+    margin-top: 20px;
+}
+#main .quote label{
+    font-size: 18px;
+    color: #5d535e;
+}
+
+#main .quote ::placeholder{
+    font: 15px/1 Bodoni MT;
+    font-weight: 100;
+    color: #bbbbbb;
+}
+
+#main .quote :-ms-input-placeholder{
+    font: 15px/1 Bodoni MT;
+    font-weight: 100;
+    color: #bbbbbb;
+}
+
+#main .quote input[type="text"]{
+    font: normal 15px/1.5 Bodoni MT;
+    color: #5d535e;
+    width: 60%;
+}
+
+#main .quote textarea{
+    font: normal 15px/1.5 Bodoni MT;
+    color: #5d535e;
+    width: 59.6%;
+}
+
+#main .quote div{
+    float: none;
+    padding: 0 5px 0 0px;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+#main .quote button{
+    margin-top: 2px;
+    margin-left: 0px;
+}
+
+#main .dark{
+    margin-top: 100px;
+}
+
+
+/*List python assignment*/
+#python li{
+    font-size: 18px;
+    padding: 0 20px 0 0px;
+    margin-left: 24px;
+ }
+ 
+#python a{
+    font-size: 18px;
+    padding: 0 20px 0 10px;
+ }
+
+
 
 /*Services*/
 #services li{
@@ -262,14 +469,13 @@ footer{
     color: #ffffff;
     background-color: #9bd8d2;
     text-align: center;
+    bottom: 0px;
+    width: 100%;
 }
 
 
 /*Media Queries*/
 @media(max-width: 770px){
-    header #branding,
-    header nav,
-    header nav li,
     #newsletter h1,
     #newsletter form,
     #boxes .box,
@@ -280,9 +486,8 @@ footer{
         text-align: center;
         width: 100%;
     }
-    
-    header{
-        padding-bottom: 15px;
+    header li{
+        padding: 0 20px 0 20px;
     }
     
     #showcase h1{
@@ -298,8 +503,43 @@ footer{
         width:100%;
         margin-bottom: 5px;
     }
+    
+    #boxes{
+        margin-top: 10px;
+    }
+    
     #boxes .white{
         width: 90%;
     }
     
+    #main .container{
+        width: 80%;
+        padding: 20px;
+    }
+    
+    #main .quote div{
+        padding: 0 5px 0 0px;
+        margin-left: 0;
+    }
+    
+    #main .quote button{
+        margin-left: 0;
+    }
+    
+    #main .quote input[type="text"]{
+        width: 100%;
+    }
+    
+    #main .quote textarea{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media(max-width: 394px){
+    .dropdown{top: 23%;}
+}
+
+@media(max-width: 260px){
+    .dropdown{top: 29%;}
 }
