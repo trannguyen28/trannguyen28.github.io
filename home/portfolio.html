@@ -19,17 +19,17 @@
                 <div id="navbar">
                     <nav>
                         <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="./origami.html">Origami</a></li>
-                            <li class="current"><a href="./portfolio.html">Portfolio</a></li>
+                            <li class="current"><a href="index.html">Home</a></li>
+                            <li><a href="./home/origami.html">Origami</a></li> 
+                            <li><a onClick="passWord()" href="#">Portfolio</a></li> 
                         </ul>
                     </nav>
                     <div class="dropdown">
                         <li class="dropbtn">≡</li>
                         <div class="dropdown-content">
-                            <a href="../index.html">Home</a>
-                            <a href="./origami.html">Origami</a>
-                            <a href="./portfolio.html">Portfolio</a>
+                            <a href="index.html">Home</a>
+                            <a href="./home/origami.html">Origami</a>
+                            <a onClick="passWord()" href="#">Portfolio</a>
                         </div>
                     </div>
                 </div>
@@ -78,3 +78,25 @@
         
     </body>
 </html>
+
+<SCRIPT>
+    function passWord() {
+        var testV = 1;
+        var pass1 = prompt('Please Enter Password. (Hint: Our teacher\'s last name)',' ');
+        while (testV < 3) {
+        if (!pass1) 
+        history.go(-1);
+        if (pass1.toLowerCase() == "thoe") {
+        alert('You Got it Right!');
+        window.open("./home/portfolio.html");
+        break;
+        } 
+        testV+=1;
+        var pass1 = 
+        prompt('Password incorrect, please try again.','Password');
+        }
+        if (pass1.toLowerCase()!="password" & testV ==3) 
+        history.go(-1);
+        return " ";
+    } 
+</SCRIPT>
