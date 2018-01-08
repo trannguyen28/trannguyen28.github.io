@@ -541,13 +541,13 @@ footer{
 }
 
 @media(max-width: 426px){
-    .dropdown{top: 6%;}
+    .dropdown{top: 5%;}
 }
 
 @media(max-width: 295px){
-    .dropdown{top: 17%;}
+    .dropdown{top: 15%;}
 }
 
 @media(max-width: 263px){
-    .dropdown{top: 23%;}
+    .dropdown{top: 20%;}
 }
