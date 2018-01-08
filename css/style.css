@@ -32,7 +32,7 @@ ul{
     color: #ffffff;
     margin-top: 10px;
     margin-bottom: 10px;
-    float: none;
+    float: left;
 }
 
 .white{
@@ -169,16 +169,6 @@ header a:hover{
 .dropdown:hover .dropbtn:hover{
     background-color: #f18d9e;
     color: #5d535e;
-}
-
-
-/*Hide & show DIV element*/
-.myDIV {
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
 }
 
 
@@ -337,7 +327,7 @@ body #boxes p{
 /*Sidebar*/
 #sidebar{
     float: right;
-    width: 30%;
+    width: 35%;
     margin-top:10px;
 }
 
@@ -389,7 +379,9 @@ body #boxes p{
 
 /*Share Ideas Form*/
 #main .quote{
-    margin-top: 20px;
+    margin-top: -10px;
+    margin-left: 40px;
+    margin-right: 0px;
 }
 #main .quote label{
     font-size: 18px;
@@ -512,9 +504,17 @@ footer{
         width: 90%;
     }
     
+    #main .dark{
+    margin-top: 50px;
+    }
+    
     #main .container{
         width: 80%;
         padding: 20px;
+    }
+    
+    #main .quote{
+        margin-left: 0px;
     }
     
     #main .quote div{
@@ -536,10 +536,14 @@ footer{
     }
 }
 
-@media(max-width: 394px){
-    .dropdown{top: 23%;}
+@media(max-width: 426px){
+    .dropdown{top: 6%;}
 }
 
-@media(max-width: 260px){
-    .dropdown{top: 29%;}
+@media(max-width: 295px){
+    .dropdown{top: 17%;}
+}
+
+@media(max-width: 263px){
+    .dropdown{top: 23%;}
 }
