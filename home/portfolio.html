@@ -19,17 +19,17 @@
                 <div id="navbar">
                     <nav>
                         <ul>
-                            <li class="current"><a href="index.html">Home</a></li>
-                            <li><a href="./home/origami.html">Origami</a></li> 
-                            <li><a onClick="passWord()" href="#">Portfolio</a></li> 
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./origami.html">Origami</a></li>
+                            <li><a class="current" onClick="passWord()" href="#">Portfolio</a></li> 
                         </ul>
                     </nav>
                     <div class="dropdown">
                         <li class="dropbtn">≡</li>
                         <div class="dropdown-content">
-                            <a href="index.html">Home</a>
-                            <a href="./home/origami.html">Origami</a>
-                            <a onClick="passWord()" href="#">Portfolio</a>
+                            <a href="../index.html">Home</a>
+                            <a href="./origami.html">Origami</a>
+                            <a href="./portfolio.html">Portfolio</a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
         history.go(-1);
         if (pass1.toLowerCase() == "thoe") {
         alert('You Got it Right!');
-        window.open("./home/portfolio.html");
+        window.open("./portfolio.html");
         break;
         } 
         testV+=1;
