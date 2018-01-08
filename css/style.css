@@ -14,8 +14,8 @@ ul{
     height: 28px;
     background: #f18d9e;
     border: 0;
-    padding-left: 20px;
-    padding-right:20px;
+    padding-left: 18px;
+    padding-right: 18px;
     color: #ffffff;
     font: 16px/1.5 Bodoni MT;
 }
@@ -201,11 +201,12 @@ header a:hover{
 
 #newsletter h1{
     float: left;
+    margin-left: 0px;
 }
 
 #newsletter form{
     float: right;
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 #newsletter input[type="search"]{
@@ -214,7 +215,6 @@ header a:hover{
     width: 250px;
     font: normal 15px/1.5 Bodoni MT;
     color: #5d535e;
-    width: 60%;
 }
 
 #newsletter ::placeholder{
