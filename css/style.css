@@ -468,6 +468,9 @@ footer{
 
 /*Media Queries*/
 @media(max-width: 770px){
+    header,
+    #showcase,
+    #newsletter,
     #newsletter h1,
     #newsletter form,
     #boxes .box,
@@ -478,6 +481,7 @@ footer{
         text-align: center;
         width: 100%;
     }
+    
     header li{
         padding: 0 20px 0 20px;
     }
