@@ -435,14 +435,14 @@ body #boxes p{
 }
 
 
-/*List python assignment*/
-#python li{
+/*Listed assignment*/
+#assignment li{
     font-size: 18px;
     padding: 0 20px 0 0px;
     margin-left: 24px;
  }
  
-#python a{
+#assignment a{
     font-size: 18px;
     padding: 0 20px 0 10px;
  }
