@@ -41,26 +41,29 @@ void draw() {
         vy += 1;
         y += vy;
         if( x == -1000) x = 0;
+        
         for(int i = 0 ; i < 2; i++) {
             imageMode(CENTER);
             image(wall, wx[i], wy[i] - (wall.height/2+100)); 
             image(wall, wx[i], wy[i] + (wall.height/2+100)); 
             if(wx[i] < 0) {
-                wy[i] = (int)random(200,height-200);
+                wy[i] = (int)random(200, height-200);
                 wx[i] = width;
             }
             if(wx[i] == width/2) {
                 score++;
                 highScore = max(score, highScore);
             }
-            if(y > height || y < 0 || (abs(width/2-wx[i])<25 && abs(y-wy[i])>100)) {
+            if(y > height || y < 0 || (abs(width/2-wx[i])<25 && abs(y-wy[i])>100)) {    ///if airplane touches top & bottom & wall 
                 gamestate=1;
             }
-            wx[i] -= 6; ///How fast the airplane move
+            wx[i] -= 6; ///How fast the wall move
         }
+        
         image(airplane, width/2, y);
         text(""+score, width/2-15, 700);
     }
+    
     else {
         imageMode(CENTER);
         image(mainmenu, width/2, height/2);
@@ -72,8 +75,8 @@ void draw() {
 void mousePressed() {
     vy = -17;
     if(gamestate==1) {
-        wx[0] = 1500;
-        wy[0] = height/2;
+        wx[0] = 1500;   ///chinh vi tri cua wall
+        wy[0] = height/2-100;
         wx[1] = 2100;
         wy[1] = 600;
         x = gamestate = score = 0;
