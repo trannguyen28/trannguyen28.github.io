@@ -56,7 +56,7 @@ void draw() {
             if(y > height || y < 0 || (abs(width/2-wx[i])<25 && abs(y-wy[i])>100)) {
                 gamestate=1;
             }
-            wx[i] -= 6;
+            wx[i] -= 6; ///How fast the airplane move
         }
         image(airplane, width/2, y);
         text(""+score, width/2-15, 700);
@@ -64,18 +64,16 @@ void draw() {
     else {
         imageMode(CENTER);
         image(mainmenu, width/2, height/2);
-        fill(185,122,87);
-        textSize(60);
-        text("High Score: " + highScore, 50, width);
+        text("High Score: " +highScore, width/2-180, 600);
     }
 }
         
 void mousePressed() {
     vy = -17;
     if(gamestate==1) {
-        wx[0] = 1000;
+        wx[0] = 1500;
         wy[0] = height/2;
-        wx[1] = 1200;
+        wx[1] = 2100;
         wy[1] = 600;
         x = gamestate = score = 0;
         y = height/2;
